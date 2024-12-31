@@ -7,7 +7,7 @@
     --dark-blue: #500073;
     --dark-red: #C62300;
     --red: #F14A00;
-    --half-white:#e2d4d4d9;
+    --half-white: #e2d4d4d9;
 }
 
 /* global css  */
@@ -134,43 +134,188 @@
     overflow: hidden;
     min-height: 400px;
     background-color: var(--dark-blue);
-    color: var(--dark-red);
 }
 
-.intro .intro-title{
+.intro .intro-title {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 12px;
-    border-left: 8px solid var(--blue);
+    border-left: 8px solid var(--dark-red);
     padding-left: 12px;
+    color: var(--red);
 }
 
-.intro .intro-para{
+.intro .intro-para {
     line-height: 26px;
     text-align: justify;
     color: var(--half-white);
 }
-.intro .intro-img{
+
+.intro .intro-img {
     border: none;
     background-color: var(--dark-blue);
 }
 
-.intro .intro-img img{
+.intro .intro-img img {
     height: 400px;
     object-fit: contain;
 }
 
-.skills{
+.skills {
     padding: 30px 80px 20px 80px;
 }
-.skills .skill-title{
+
+.skills .skill-title {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 12px;
-    border-left: 8px solid var(--blue);
+    border-left: 8px solid var(--dark-red);
     padding-left: 12px;
+    color: var(--red);
 }
 
-.skills .skill-card-title{
+.skills .skill-card {
+    overflow: hidden;
+}
+
+.skills .skill-icon-wrapper {
+    background-color: var(--dark-blue);
+    color: var(--dark-red);
+}
+
+.skills .skill-card i {
+    font-size: 25px;
+    color: var(--half-white);
+}
+
+.skills .skill-card-title {
     margin: 0;
+}
+
+.experience{
+    padding: 30px 80px 20px 80px;
+    position: relative;
+}
+.experience .experience-fancy-line{
+    position: absolute;
+    top: 102px;
+    left: 78px;
+    height: 82%;
+    width: 3px;
+    background-color: var(--blue);
+}
+.experience .experience-circle {
+    font-size: 20px;
+    color: var(--red);
+    position: absolute;
+}
+.experience .experience-circle-1 {
+    top: 95px;
+    left: 69px;
+}
+.experience .experience-circle-2 {
+    top: 431px;
+    left: 69px;
+}
+.experience .experience-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-left: 8px solid var(--dark-red);
+    padding-left: 12px;
+    color: var(--red);
+}
+.experience .experience-pos-dur-comp{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+.experience .experience-pos-dur-comp>h6{
+    color: var(--dark-blue);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.experience .experience-sec {
+    padding-left: 17px;
+    position: relative;
+}
+
+.experience .experience-respo-list{
+    list-style: none;
+}
+.experience .experience-respo-list>li{
+    position: relative;
+    display: block;
+}
+.experience .experience-respo-list>li::before{
+    content: "\f26a";
+    font-family: bootstrap-icons !important;
+    display: inline-block;
+    font-size: 18px;
+    position: absolute;
+    top: -2px;
+    left: -28px;
+    color: var(--red);
+}
+
+.education{
+    padding: 30px 80px 20px 80px;
+    position: relative;
+}
+.education .education-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-left: 8px solid var(--dark-red);
+    padding-left: 12px;
+    color: var(--red);
+
+}
+.education .education-degree-uni h5{
+    margin-bottom: 0px;
+    color: var(--blue);
+}
+
+.certifications{
+    padding: 30px 80px 20px 80px;
+    position: relative;
+}
+.certifications .certifications-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-left: 8px solid var(--dark-red);
+    padding-left: 12px;
+    color: var(--red);
+}
+.certifications .certifications-card img{
+    height: 183px;
+    object-fit: cover;
+}
+.certifications .certifications-card{
+    min-height: 420px;
+    margin-bottom: 15px;
+} 
+.certifications .cerfication-course-title{
+    color: var(--blue);
+}
+.certifications .cerfication-focus-areas{
+    color: var(--red);
+}
+
+.certifications .certifications-card ul{
+    margin: -5px;
+}
+.hobbies{
+    padding: 30px 80px 20px 80px;
+    position: relative;
+}
+.hobbies .hobbies-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-left: 8px solid var(--dark-red);
+    padding-left: 12px;
+    color: var(--red);
 }
