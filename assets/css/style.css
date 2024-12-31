@@ -373,10 +373,6 @@
 
 /* media queries  */
 @media(max-width:990px) {
-    .hero {
-        /* height: calc(100vh - 30vh); */
-    }
-
     .hero .main-title {
         padding: 20px;
     }
@@ -394,6 +390,16 @@
 
     .navigation .navigation-menu li:hover {
         border-left-color: var(--dark-red);
+    }
+
+    .intro .intro-img {
+        height: 500px;
+        margin-bottom: 14px;
+    }
+
+    .intro .intro-img img {
+        object-fit: contain;
+        height: 100%;
     }
 }
 
@@ -419,6 +425,37 @@
     .hobbies {
         padding: 30px 29px 20px 29px
     }
+
+    .intro .intro-title,
+    .skills .skill-title,
+    .experience .experience-title,
+    .education .education-title,
+    .certifications .certifications-title,
+    .hobbies .hobbies-title {
+        font-size: 34px;
+    }
+    .skills .skill-card{
+        text-align: center;
+    }
+    .skills .skill-icon-wrapper{
+        background: none;
+    }
+    .skills .skill-icon-wrapper>div{
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--red);
+    }
+    .skills .skill-card i{
+        color: var(--dark-blue);
+    }
+    .skills .skill-card-title{ 
+        font-size: 18px;
+    }
 }
 
 /* small screen  */
@@ -434,6 +471,9 @@
 
     .hero .hero-title h1 {
         font-size: 25px;
+    }
+    .intro .intro-title, .skills .skill-title, .experience .experience-title, .education .education-title, .certifications .certifications-title, .hobbies .hobbies-title{
+        border-left: 4px solid var(--dark-red);
     }
 }
 
@@ -473,28 +513,50 @@
         object-fit: cover;
     }
 
-    .hero .main-title{
+    .hero .main-title {
         text-align: center;
         padding: 10px 15px;
         box-shadow: none;
         border: 2px dashed var(--red);
     }
+
     .hero .hero-title h1 {
         font-size: 19px;
     }
+
     .hero .main-title>span.hi {
-        position:unset;
+        position: unset;
         box-shadow: none;
         display: inline;
         background: none;
         color: var(--half-white);
     }
-    .hero .sub-title h2{
+
+    .hero .sub-title h2 {
         color: var(--dark-red);
     }
+
     .hero .sub-title .data-analyst {
         padding: 7px 9px;
-        background:none;
+        background: none;
+    }
+
+    .intro .intro-img {
+        display: none;
+    }
+
+    .intro .intro-para {
+        line-height: 21px;
+        font-size: 13px;
+    }
+    
+    .intro .intro-title,
+    .skills .skill-title,
+    .experience .experience-title,
+    .education .education-title,
+    .certifications .certifications-title,
+    .hobbies .hobbies-title {
+        font-size: 25px;
     }
 }
 
