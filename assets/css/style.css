@@ -540,6 +540,9 @@
     .certifications .certifications-card{
         min-height: auto;
     }
+    .certifications .certifications-card img{
+        height: 130px;
+    }
 }
 
 /* very  small screen  */
