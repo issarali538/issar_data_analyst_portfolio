@@ -28,6 +28,21 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+.navigation .navigation-email-mobile{
+    color: var(--red);
+    font-size: 16px;
+    padding-bottom: 0;
+}
+.navigation .navigation-menu-button{
+    border-color: var(--red);
+}
+.navigation .navigation-menu-button:focus{
+    box-shadow: var(--red);
+}
+.navigation .navigation-email-mobile a{
+    text-decoration: none;
+}
+
 .navigation .carousel-item {
     height: 100% !important;
 }
