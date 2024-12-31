@@ -19,7 +19,7 @@
     z-index: 120;
     padding: 5px 0 5px 0px;
     background-color: var(--dark-blue) !important;
-    position: absolute;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -40,6 +40,9 @@
 }
 
 .navigation a:hover {
+    color: var(--dark-red);
+}
+.navigation a:focus{
     color: var(--dark-red);
 }
 
