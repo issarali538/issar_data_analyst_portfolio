@@ -30,7 +30,7 @@
 
 .navigation .navigation-email-mobile {
     color: var(--red);
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 0;
 }
 
@@ -192,6 +192,9 @@
 .intro .intro-img img {
     height: 400px;
     object-fit: contain;
+}
+.intro .intro-yellow-bg-img{
+    display: none;
 }
 
 .skills {
@@ -512,6 +515,33 @@
         font-size: 20px;
     }
 
+    .intro .card-img-top{
+        display: none;
+    }
+    .intro .intro-img{
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        margin: 10px auto;
+        border-radius: 100%;
+        position: relative;
+        box-shadow: var(--red) 0px 7px 29px 0px;
+    }
+    .card.text-center.intro-img::before {
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        background: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.4;
+    }
+    .intro .intro-yellow-bg-img{
+        display: block;
+    }
+
     .intro,
     .skills,
     .experience,
@@ -668,7 +698,9 @@
         border-radius: 100%;
         overflow: hidden;
         margin-bottom: 13px;
+        margin-top: 13px;
         opacity: 0.8;
+         box-shadow: var(--red) 0px 7px 29px 0px;
     }
 
     .hero .hero-img-wrapper>div img {
