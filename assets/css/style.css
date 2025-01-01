@@ -397,6 +397,64 @@
     padding-left: 12px;
     color: var(--red);
 }
+.hobbies .hobbies-card{
+    border-color: var(--red) !important;
+}
+.hobbies .hobbies-card .card-body{
+    text-align: center;
+}
+.hobbies .hobbies-card .card-header{
+    font-weight: bold;
+    color: var(--half-white);
+    background-color: var(--dark-blue);
+}
+.hobbies .hobbies-card img{
+    width: 50px;
+}
+.social-links{
+    background-color: var(--red);
+    padding: 20px 80px 20px 80px;
+}
+.social-links .social-links-title{
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.social-links .social-links-list ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.social-links .social-links-list ul li{
+    display: inline-block;
+    margin: 0 8px;
+}
+.social-links .social-links-list ul li a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 17px;
+    border-width: 2px;
+    border-style: solid;
+    transition: all 0.5s;
+}
+.social-links .social-links-list ul li a:hover{
+    border-color: var(--half-white);
+}
+.social-links .social-links-list ul li i{
+    color: white;
+    padding:0 !important;
+}
 
 /* media queries  */
 @media(max-width:990px) {
@@ -459,7 +517,7 @@
     .experience,
     .education,
     .certifications,
-    .hobbies {
+    .hobbies,.social-links {
         padding: 30px 29px 20px 29px
     }
 
@@ -666,6 +724,9 @@
     .education .education-subjects, .certifications .certifications-card,
     .projects .projects-card p,a,i {
         font-size: 13px;
+    }
+    .social-links .social-links-list ul li{
+        margin: 0 2px;
     }
 }
 
