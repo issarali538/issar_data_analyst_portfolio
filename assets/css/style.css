@@ -636,6 +636,9 @@
     .projects .projects-card-img-wrapper img{
         object-fit: contain;
     }
+    .hobbies .hobbies-card .card-header{
+        text-align: center;
+    }
 }
 
 /* very  small screen  */
